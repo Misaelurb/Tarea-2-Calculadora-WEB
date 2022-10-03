@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculadora</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css" media="all">
+</head>
+<body>
+	<h1>Calculadora</h1>
+	<br>
+
+	<div class="contenido">
+
+		<div class="cuerpo">
+
+			<div class="contenedor">
+
+				<div class="historial">
+					<label class="numero1historial"	id="numero1historial"></label>
+					<label class="signohistorial" id="signohistorial"></label>
+					<label class="numero2historial" id="numero2historial"></label>
+				</div>
+				<div class="display">
+					<input type="text" class="displayprincipal" id="displayprincipal">
+					<label class="signooperacion" id="signooperacion"></label>
+				</div>
+
+				<div class="contenedorbotones">
+					<input type="button" value="1" name="btnnumero">
+					<input type="button" value="2" name="btnnumero">
+					<input type="button" value="3" name="btnnumero">
+					<input type="button" value="+" id="btnmas" onclick="suma()">
+					<br>
+					<input type="button" value="4" name="btnnumero">
+					<input type="button" value="5" name="btnnumero">
+					<input type="button" value="6" name="btnnumero">
+					<input type="button" value="-" id="btnmenos" onclick="resta()">
+					<br>
+					<input type="button" value="7" name="btnnumero">
+					<input type="button" value="8" name="btnnumero">
+					<input type="button" value="9" name="btnnumero">
+					<input type="button" value="x" id="btnmultiplicacion" onclick="multiplicar()">
+					<br>
+					<input type="button" value="0" name="btnnumero">
+					<input type="button" value="." name="btnnumero" class=btnpunto>
+					<input type="button" value="c" onclick="borrar()">
+					<input type="button" value="/" id="btnmultiplicacion" onclick="dividir()">
+					<br>
+					<input type="button" value="=" class="btnigual" id="btnigual" onclick="resultadofinal()">
+	
+				</div>
+
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="operaciones.js"></script>
+</html>
